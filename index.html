@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" >
+        <link href="css/sections.css" rel="stylesheet" />
+        <link href="css/main.css" rel="stylesheet" />
+        <link href="css/button.css" rel="stylesheet" />
+        <link href="css/search-area.css" rel="stylesheet" />
+        <title>H&M Code Test for Markus Wase</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Code test for Markus Wase for H&M">
+    </head>
+    <body>
+        <h1>H&M Code Test for Markus Wase</h1>
+        <article role="main">
+            <h2>CSS Wizardry</h2>
+            <button class="close-button-1">Delete</button>
+
+            <hr />
+
+            <h2>Autocomplete</h2>
+            <div class="search-area container">
+                <section class="section">
+                    <div class="search-area__input-wrapper">
+                        <input role="search" aria-label="Search for your word here" type="text" class="search-area__input-wrapper__input" placeholder="Search for your word here" />
+                        <a href="#" class="search-area__input-wrapper__clear-button">🞩</a>
+                    </div>
+                    <div class="search-area__autocomplete-results">
+                        <ul class="search-area__autocomplete-results__results-list"></ul>
+                    </div>
+                </section>
+                <section class="section">
+                    <div class="search-area__history">
+                        <h3>
+                            Search history
+                            <a href="#" class="search-area__history__clear-history">Clear search history</a>
+                        </h3>
+                        <ul class="search-area__history__list"></ul>
+                    </div>
+                </section>
+            </div>
+        </article>
+
+        <script src="js/helpers.js" type="text/javascript"></script>
+        <script src="js/autocomplete.js" type="text/javascript"></script>
+        <script src="js/search-area.js" type="text/javascript"></script>
+    </body>
+</html>

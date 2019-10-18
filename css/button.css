@@ -1,0 +1,32 @@
+.close-button-1 {
+    font-weight: bold;
+    line-height: 40px;
+    padding: 5px 5px 4px 10px;
+    border: 2px solid #808080;
+    background: linear-gradient(90deg, #f2af64, #ef9544);
+    font-size: 14px;
+    position: relative;
+}
+
+    .close-button-1:after {
+        content: '🞩';
+        background: white;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        display: block;
+        line-height: 41px;
+        float: right;
+        margin-left: 8px;
+        text-align: center;
+        font-size: 25px;
+        margin-bottom: 3px;
+    }
+
+    .close-button-1:active {
+        transform: scale(.95);
+    }
+
+    .close-button-1:focus {
+        outline: 2px solid #f00;
+    }
