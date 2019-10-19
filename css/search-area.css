@@ -16,6 +16,7 @@
             font-weight: bold;
         }
 
+            /* To get rid of the Edge/IE clear cross in the input */
             .search-area__input-wrapper__input::-ms-clear {
                 display:none; 
             }
@@ -57,10 +58,18 @@
         transition: all .075s ease-in-out;
     }
 
-        .search-area__autocomplete-results__results-list__item:hover {
+        .search-area__autocomplete-results__results-list__item:hover,
+        .search-area__autocomplete-results__results-list__item a:focus {
             cursor: pointer;
             background: #efefef;
             padding: 10px;
+            outline: none;
+        }
+
+        .search-area__autocomplete-results__results-list__item a {
+            color: #000;
+            text-decoration: none;
+            display: block;
         }
 
     .search-area__autocomplete-results__results-list__item__highlighted {
